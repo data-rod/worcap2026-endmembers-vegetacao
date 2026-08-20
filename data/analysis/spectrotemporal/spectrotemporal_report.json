@@ -1,0 +1,340 @@
+{
+  "class_dates": 736,
+  "automatic_candidates": 2935,
+  "class_dates_with_candidates": 734,
+  "no_active_candidate": 76,
+  "representative_spectra": 658,
+  "single_active_candidate": 571,
+  "multiple_active_candidates": 87,
+  "analytic_classes": [
+    "02",
+    "09",
+    "10",
+    "11"
+  ],
+  "excluded_class": {
+    "class_code": "01",
+    "valid_dates": 138,
+    "expected_dates": 184,
+    "valid_fraction": 0.75
+  },
+  "stl_primary": {
+    "period": 23,
+    "seasonal": 7,
+    "trend": 45,
+    "low_pass": 25,
+    "robust": true,
+    "metrics_use_observed_dates_only": true
+  },
+  "sensitivity_variants": [
+    "lowest_active_ppi",
+    "exclude_valid_pixels_below_100",
+    "seasonal_13",
+    "seasonal_23_trend_69",
+    "nonrobust",
+    "trim_initial_imputed",
+    "pchip_interpolation"
+  ],
+  "amplitude_rank_robustness": [
+    {
+      "class_code": "02",
+      "primary_top_amplitude_domain": "NIR",
+      "variants_preserving_primary_top": 8,
+      "variants_tested": 8,
+      "preserved_in_all_variants": true,
+      "differing_variants": ""
+    },
+    {
+      "class_code": "09",
+      "primary_top_amplitude_domain": "NIR",
+      "variants_preserving_primary_top": 7,
+      "variants_tested": 8,
+      "preserved_in_all_variants": false,
+      "differing_variants": "lowest_active_ppi"
+    },
+    {
+      "class_code": "10",
+      "primary_top_amplitude_domain": "NIR",
+      "variants_preserving_primary_top": 8,
+      "variants_tested": 8,
+      "preserved_in_all_variants": true,
+      "differing_variants": ""
+    },
+    {
+      "class_code": "11",
+      "primary_top_amplitude_domain": "NIR",
+      "variants_preserving_primary_top": 8,
+      "variants_tested": 8,
+      "preserved_in_all_variants": true,
+      "differing_variants": ""
+    }
+  ],
+  "amplitude_scale": {
+    "spearman_absolute_amplitude_vs_median_reflectance": 0.8962476547842403,
+    "combinations": 40,
+    "relative_amplitude_is_supplementary": true
+  },
+  "active_candidate_availability": {
+    "minimum_phase_fraction": 0.5,
+    "maximum_phase_fraction": 1.0,
+    "phase_rows": 92
+  },
+  "valid_pixel_phase_ranges": [
+    {
+      "class_code": "02",
+      "minimum_phase_median": 415,
+      "maximum_phase_median": 956,
+      "maximum_to_minimum_ratio": 2.3048192771084337
+    },
+    {
+      "class_code": "09",
+      "minimum_phase_median": 384,
+      "maximum_phase_median": 918,
+      "maximum_to_minimum_ratio": 2.387516254876463
+    },
+    {
+      "class_code": "10",
+      "minimum_phase_median": 396,
+      "maximum_phase_median": 984,
+      "maximum_to_minimum_ratio": 2.486111111111111
+    },
+    {
+      "class_code": "11",
+      "minimum_phase_median": 384,
+      "maximum_phase_median": 982,
+      "maximum_to_minimum_ratio": 2.5539661898569572
+    }
+  ],
+  "maximum_absolute_valid_pixel_correlation": 0.5084949519495902,
+  "parquet_runtime": {
+    "pyarrow": "22.0.0",
+    "read_back_validated": true
+  },
+  "all_reconstruction_errors_below_1e_10": true,
+  "primary_domain_metrics": [
+    {
+      "variant": "primary",
+      "class_code": "02",
+      "domain": "NIR",
+      "bands": "B08|B8A",
+      "band_count": 2,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.49357812122240335,
+      "seasonal_strength_min": 0.4584735396252696,
+      "seasonal_strength_max": 0.5286827028195371,
+      "seasonal_amplitude_median": 0.1255022102847124,
+      "low_frequency_strength_median": 0.1374280406145968,
+      "unique_representative_pixels": 81
+    },
+    {
+      "variant": "primary",
+      "class_code": "02",
+      "domain": "RED_EDGE",
+      "bands": "B05|B06|B07",
+      "band_count": 3,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.43523076976181607,
+      "seasonal_strength_min": 0.18645782398008715,
+      "seasonal_strength_max": 0.5249456720339434,
+      "seasonal_amplitude_median": 0.09956549471324468,
+      "low_frequency_strength_median": 0.09476851681224596,
+      "unique_representative_pixels": 81
+    },
+    {
+      "variant": "primary",
+      "class_code": "02",
+      "domain": "SWIR",
+      "bands": "B11|B12",
+      "band_count": 2,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.14336833781354946,
+      "seasonal_strength_min": 0.12057153524679043,
+      "seasonal_strength_max": 0.1661651403803085,
+      "seasonal_amplitude_median": 0.05888006592385915,
+      "low_frequency_strength_median": 0.03608841268596885,
+      "unique_representative_pixels": 81
+    },
+    {
+      "variant": "primary",
+      "class_code": "02",
+      "domain": "VIS",
+      "bands": "B02|B03|B04",
+      "band_count": 3,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.04550369574831126,
+      "seasonal_strength_min": 0.030267724888604297,
+      "seasonal_strength_max": 0.12835748912859923,
+      "seasonal_amplitude_median": 0.05628291635727843,
+      "low_frequency_strength_median": 0.01286652444074321,
+      "unique_representative_pixels": 81
+    },
+    {
+      "variant": "primary",
+      "class_code": "09",
+      "domain": "NIR",
+      "bands": "B08|B8A",
+      "band_count": 2,
+      "observed_dates": 173,
+      "seasonal_strength_median": 0.3502369365449056,
+      "seasonal_strength_min": 0.2825677017039778,
+      "seasonal_strength_max": 0.4179061713858334,
+      "seasonal_amplitude_median": 0.13350727454214778,
+      "low_frequency_strength_median": 0.11007386144964432,
+      "unique_representative_pixels": 109
+    },
+    {
+      "variant": "primary",
+      "class_code": "09",
+      "domain": "RED_EDGE",
+      "bands": "B05|B06|B07",
+      "band_count": 3,
+      "observed_dates": 173,
+      "seasonal_strength_median": 0.3308948572090611,
+      "seasonal_strength_min": 0.31283729196234833,
+      "seasonal_strength_max": 0.4004791467090759,
+      "seasonal_amplitude_median": 0.12864881476422274,
+      "low_frequency_strength_median": 0.036409720439329996,
+      "unique_representative_pixels": 109
+    },
+    {
+      "variant": "primary",
+      "class_code": "09",
+      "domain": "SWIR",
+      "bands": "B11|B12",
+      "band_count": 2,
+      "observed_dates": 173,
+      "seasonal_strength_median": 0.31771400864878746,
+      "seasonal_strength_min": 0.2404121476551786,
+      "seasonal_strength_max": 0.3950158696423963,
+      "seasonal_amplitude_median": 0.09934678062942368,
+      "low_frequency_strength_median": 0.008782515419315795,
+      "unique_representative_pixels": 109
+    },
+    {
+      "variant": "primary",
+      "class_code": "09",
+      "domain": "VIS",
+      "bands": "B02|B03|B04",
+      "band_count": 3,
+      "observed_dates": 173,
+      "seasonal_strength_median": 0.17545810686404706,
+      "seasonal_strength_min": 0.1743718603859672,
+      "seasonal_strength_max": 0.2861670252208751,
+      "seasonal_amplitude_median": 0.048523829535636095,
+      "low_frequency_strength_median": 0.0006586046872707474,
+      "unique_representative_pixels": 109
+    },
+    {
+      "variant": "primary",
+      "class_code": "10",
+      "domain": "NIR",
+      "bands": "B08|B8A",
+      "band_count": 2,
+      "observed_dates": 165,
+      "seasonal_strength_median": 0.43931008104230856,
+      "seasonal_strength_min": 0.4056656519148938,
+      "seasonal_strength_max": 0.47295451016972334,
+      "seasonal_amplitude_median": 0.1635973273736045,
+      "low_frequency_strength_median": 0.06973242885507386,
+      "unique_representative_pixels": 91
+    },
+    {
+      "variant": "primary",
+      "class_code": "10",
+      "domain": "RED_EDGE",
+      "bands": "B05|B06|B07",
+      "band_count": 3,
+      "observed_dates": 165,
+      "seasonal_strength_median": 0.48130129638485053,
+      "seasonal_strength_min": 0.3327618682174226,
+      "seasonal_strength_max": 0.498962960475108,
+      "seasonal_amplitude_median": 0.13852446806077762,
+      "low_frequency_strength_median": 0.037250396367312866,
+      "unique_representative_pixels": 91
+    },
+    {
+      "variant": "primary",
+      "class_code": "10",
+      "domain": "SWIR",
+      "bands": "B11|B12",
+      "band_count": 2,
+      "observed_dates": 165,
+      "seasonal_strength_median": 0.34270919949365325,
+      "seasonal_strength_min": 0.33671614624970647,
+      "seasonal_strength_max": 0.3487022527376,
+      "seasonal_amplitude_median": 0.08480214627506938,
+      "low_frequency_strength_median": 0.02121607470377651,
+      "unique_representative_pixels": 91
+    },
+    {
+      "variant": "primary",
+      "class_code": "10",
+      "domain": "VIS",
+      "bands": "B02|B03|B04",
+      "band_count": 3,
+      "observed_dates": 165,
+      "seasonal_strength_median": 0.2417282849629271,
+      "seasonal_strength_min": 0.23752448134289572,
+      "seasonal_strength_max": 0.2496460403940598,
+      "seasonal_amplitude_median": 0.04769904835587097,
+      "low_frequency_strength_median": 0.016500852334948135,
+      "unique_representative_pixels": 91
+    },
+    {
+      "variant": "primary",
+      "class_code": "11",
+      "domain": "NIR",
+      "bands": "B08|B8A",
+      "band_count": 2,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.5827604252015656,
+      "seasonal_strength_min": 0.5824071276670812,
+      "seasonal_strength_max": 0.5831137227360499,
+      "seasonal_amplitude_median": 0.20561117267156143,
+      "low_frequency_strength_median": 0.10487782672746349,
+      "unique_representative_pixels": 112
+    },
+    {
+      "variant": "primary",
+      "class_code": "11",
+      "domain": "RED_EDGE",
+      "bands": "B05|B06|B07",
+      "band_count": 3,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.5509138931901058,
+      "seasonal_strength_min": 0.2286757415904036,
+      "seasonal_strength_max": 0.601894733645695,
+      "seasonal_amplitude_median": 0.15502508408194188,
+      "low_frequency_strength_median": 0.095898536112208,
+      "unique_representative_pixels": 112
+    },
+    {
+      "variant": "primary",
+      "class_code": "11",
+      "domain": "SWIR",
+      "bands": "B11|B12",
+      "band_count": 2,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.010441051383328626,
+      "seasonal_strength_min": 0.0,
+      "seasonal_strength_max": 0.02088210276665725,
+      "seasonal_amplitude_median": 0.09742782909119803,
+      "low_frequency_strength_median": 0.05382180849543505,
+      "unique_representative_pixels": 112
+    },
+    {
+      "variant": "primary",
+      "class_code": "11",
+      "domain": "VIS",
+      "bands": "B02|B03|B04",
+      "band_count": 3,
+      "observed_dates": 160,
+      "seasonal_strength_median": 0.29452046330179316,
+      "seasonal_strength_min": 0.15800611862336522,
+      "seasonal_strength_max": 0.3110806430064895,
+      "seasonal_amplitude_median": 0.04075576958401225,
+      "low_frequency_strength_median": 0.09133552177587156,
+      "unique_representative_pixels": 112
+    }
+  ]
+}

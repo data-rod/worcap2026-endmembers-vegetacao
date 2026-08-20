@@ -1,0 +1,13 @@
+numpy>=2.0,<3
+pandas>=2.2,<3
+pyarrow==22.0.0
+scipy>=1.13,<2
+statsmodels>=0.14,<1
+matplotlib>=3.9,<4
+PyYAML>=6,<7
+requests>=2.31,<3
+earthengine-api>=1.5,<2
+jupyterlab>=4,<5
+ipykernel>=6,<7
+nbclient>=0.10,<1
+pytest>=8,<9

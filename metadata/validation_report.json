@@ -1,0 +1,101 @@
+{
+  "release_version": "1.0.0",
+  "validated_on": "2026-08-15",
+  "checks": {
+    "editable_install": "PASS",
+    "automated_tests": {
+      "status": "PASS",
+      "passed": 9
+    },
+    "sample": {
+      "status": "PASS",
+      "points": 5000,
+      "points_per_class": 1000,
+      "duplicate_pixels": 0,
+      "gpkg_layers": 6,
+      "crs": "EPSG:5880"
+    },
+    "wtss": {
+      "status": "PASS",
+      "classes": 5,
+      "rows": 920000,
+      "dates_per_point": 184
+    },
+    "ppi_reproduction": {
+      "status": "PASS",
+      "candidates": 3671,
+      "candidate_ids_identical": true,
+      "point_ids_identical": true,
+      "scores_identical": true,
+      "spectra_identical": true
+    },
+    "notebook_execution": "PASS",
+    "standalone_notebooks": {
+      "status": "PASS",
+      "count": 6,
+      "executed_without_local_package": true,
+      "local_package_imports": 0,
+      "ppi_candidates_identical": true,
+      "panel_javascript_syntax": "PASS"
+    },
+    "panel_generation": {
+      "status": "PASS",
+      "classes": 5,
+      "javascript_syntax": "PASS"
+    },
+    "reviews": {
+      "status": "PASS",
+      "files": 7,
+      "complete_files": 7,
+      "classes": 5,
+      "class_dates": 918,
+      "double_reviewed_classes": [
+        "02",
+        "09"
+      ],
+      "accepted_decisions": 918,
+      "primary_reviewer": "rodrigo"
+    },
+    "representative_series": {
+      "status": "PASS",
+      "full_class_dates": 920,
+      "representative_spectra": 796,
+      "representative_rule": "MAX_PPI_SCORE_THEN_SYSTEMATIC_ORDER"
+    },
+    "stl_decomposition": {
+      "status": "PASS",
+      "period": 23,
+      "minimum_valid_fraction": 0.8,
+      "eligible_classes": [
+        "02",
+        "09",
+        "10",
+        "11"
+      ],
+      "ineligible_classes": [
+        "01"
+      ],
+      "bands_decomposed": 40,
+      "maximum_reconstruction_error": 1.1102230246251565e-16
+    },
+    "article_draft": {
+      "status": "PASS",
+      "format": "SBC_LATEX",
+      "pages": 5,
+      "page_size": "A4",
+      "figures": 2,
+      "visual_pages_inspected": 5,
+      "author_metadata": "PLACEHOLDERS_PENDING_COAUTHOR_INPUT"
+    },
+    "presentation": {
+      "status": "PASS",
+      "slides": 10,
+      "overflow": 0
+    },
+    "privacy_and_metadata": {
+      "status": "PASS",
+      "absolute_local_paths": 0,
+      "personal_user_paths": 0
+    }
+  }
+}

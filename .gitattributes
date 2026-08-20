@@ -1,0 +1,17 @@
+# Todo arquivo de texto é gravado e conferido com quebra de linha LF, em qualquer
+# sistema. Sem isso, os SHA-256 de metadata/checksums.sha256 e de
+# data/analysis/spectrotemporal/integrity_sha256.csv deixariam de bater após um
+# clone em plataforma diferente da que gerou os arquivos.
+* text=auto eol=lf
+
+*.parquet binary
+*.gpkg binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.zip binary

@@ -1,0 +1,109 @@
+{
+  "study_id": "worcap2026_endmembers_vegetacao",
+  "release_version": "1.0.0",
+  "release_date": "2026-08-15",
+  "language": "pt-BR",
+  "period": [
+    "2017-01-01",
+    "2024-12-31"
+  ],
+  "collection": "S2-16D-2",
+  "classes": {
+    "01": "VEGETACAO NATURAL FLORESTAL PRIMARIA",
+    "02": "VEGETACAO NATURAL FLORESTAL SECUNDARIA",
+    "09": "SILVICULTURA",
+    "10": "PASTAGEM ARBUSTIVA ARBOREA",
+    "11": "PASTAGEM HERBACEA"
+  },
+  "sampling": {
+    "method": "RANDOM_START_SYSTEMATIC_LATTICE",
+    "seed": 13,
+    "points_per_class": 1000,
+    "total_points": 5000,
+    "crs": "EPSG:5880"
+  },
+  "ppi": {
+    "dates": 184,
+    "bands": [
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B8A",
+      "B11",
+      "B12"
+    ],
+    "endmembers_max": 4,
+    "projections": 10000,
+    "seed": 13,
+    "duplicate_sam_threshold_deg": 2.0,
+    "total_candidates": 3671,
+    "production_config_hash": "29333f04829c3d98583fd9aef84ed5bf0050e85ff0418cf8066ec7a40a60e5eb"
+  },
+  "review_schema": [
+    "class_code",
+    "date",
+    "active_vegetation_endmembers",
+    "candidate_ids",
+    "reviewed_at"
+  ],
+  "reviews": {
+    "files": 7,
+    "class_dates": 918,
+    "double_reviewed_classes": [
+      "02",
+      "09"
+    ],
+    "accepted_decisions": 918,
+    "primary_reviewer": "rodrigo"
+  },
+  "representative_series": {
+    "full_class_dates": 920,
+    "representative_spectra": 796,
+    "representative_rule": "MAX_PPI_SCORE_THEN_SYSTEMATIC_ORDER"
+  },
+  "stl": {
+    "period": 23,
+    "minimum_valid_fraction": 0.8,
+    "eligible_classes": [
+      "02",
+      "09",
+      "10",
+      "11"
+    ],
+    "ineligible_classes": [
+      "01"
+    ],
+    "bands_decomposed": 40
+  },
+  "article_draft": {
+    "format": "SBC_LATEX",
+    "pages": 5,
+    "page_size": "A4",
+    "author_metadata": "PLACEHOLDERS_PENDING_COAUTHOR_INPUT"
+  },
+  "entry_points": {
+    "repository_readme": "README.md",
+    "github_pages": "docs/index.html",
+    "panels": "docs/panels/index.html",
+    "notebook_guide": "notebooks/standalone/README.md",
+    "standalone_notebooks": [
+      "notebooks/standalone/01_amostra_e_series_wtss.ipynb",
+      "notebooks/standalone/02_reproduzir_candidatos_ppi.ipynb",
+      "notebooks/standalone/03_reconstruir_paineis.ipynb",
+      "notebooks/standalone/04_validar_e_consolidar_revisoes.ipynb",
+      "notebooks/standalone/05_serie_espectral_e_stl.ipynb"
+    ],
+    "operational_notebook": "notebooks/01_reproduzir_ppi_e_paineis.ipynb",
+    "validated_reviews": "reviews/validated/reviews_consolidadas.parquet",
+    "representative_series": "data/series/representative_spectra.parquet",
+    "stl_components": "data/analysis/stl_components.parquet",
+    "results_figures": "docs/figures",
+    "article_source": "manuscript/artigo.tex",
+    "article_pdf": "manuscript/artigo.pdf",
+    "configuration": "config/study.yaml"
+  }
+}

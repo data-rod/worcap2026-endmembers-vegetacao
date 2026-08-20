@@ -1,0 +1,64 @@
+study_id: worcap2026_endmembers_vegetacao
+release_version: 1.0.0
+collection_id: S2-16D-2
+wtss_url: https://data.inpe.br/bdc/wtss/v4
+period:
+  start: '2017-01-01'
+  end: '2024-12-31'
+  expected_dates: 184
+classes:
+  '01': VEGETACAO NATURAL FLORESTAL PRIMARIA
+  '02': VEGETACAO NATURAL FLORESTAL SECUNDARIA
+  '09': SILVICULTURA
+  '10': PASTAGEM ARBUSTIVA ARBOREA
+  '11': PASTAGEM HERBACEA
+sampling:
+  method: RANDOM_START_SYSTEMATIC_LATTICE
+  seed: 13
+  points_per_class: 1000
+  core_kernel: 3
+  projected_crs: EPSG:5880
+  spacing_reduction_factor: 0.95
+  minimum_spacing_m: 100.0
+bands: [B02, B03, B04, B05, B06, B07, B08, B8A, B11, B12]
+qa_bands: [SCL, CLEAROB, TOTALOB, PROVENANCE]
+scl_invalid: [0, 1, 2, 3, 8, 9, 10, 11]
+wtss:
+  workers: 4
+  retries: 5
+  retry_delay_seconds: 1.0
+  timeout_seconds: 180
+  apply_attribute_scale: true
+  masked: false
+ppi:
+  endmembers_max: 4
+  max_sampled_pixels: 1000
+  projections: 10000
+  seed: 13
+  memory_limit_mb: 6144
+  projection_batch: 32
+  candidate_pool_method: ALL_POSITIVE_PPI_SCORES
+  duplicate_sam_threshold_deg: 2.0
+  low_valid_n_threshold: 12
+panel:
+  context_spectra_max: 128
+  no_vegetation_value: NENHUM
+  selection_label: Vegetacao fotossinteticamente ativa
+analysis:
+  stl_period: 23
+  stl_seasonal: 7
+  stl_trend: 45
+  stl_low_pass: 25
+  stl_robust: true
+  primary_interpolation: LINEAR_TIME
+  sensitivity_variants:
+    - LOWEST_ACTIVE_PPI
+    - EXCLUDE_VALID_PIXELS_BELOW_100
+    - SEASONAL_13
+    - SEASONAL_23_TREND_69
+    - NONROBUST
+    - TRIM_INITIAL_IMPUTED
+    - PCHIP_INTERPOLATION
+  minimum_valid_fraction: 0.80
+provenance:
+  production_config_hash: 29333f04829c3d98583fd9aef84ed5bf0050e85ff0418cf8066ec7a40a60e5eb

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.jupyter/
+outputs/
+tmp/
+# reviews/validated/ guarda produtos publicados: eles sao rastreados pelo
+# metadata/checksums.sha256 e lidos por scripts/analyze_spectrotemporal.py
+# e por tests/test_validated_series.py. Nao devem ser ignorados.
+*.tmp
+*.partial
+.DS_Store
+Thumbs.db
+

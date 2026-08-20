@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: "Se este material for usado em trabalho científico, cite o artigo listado em preferred-citation."
+title: "Decomposição espectro-temporal de extremos do Pixel Purity Index: código, dados e cadernos de verificação"
+abstract: >-
+  Código, dados intermediários e cadernos de verificação do estudo sobre extremos do
+  Pixel Purity Index compatíveis com vegetação fotossinteticamente ativa em quatro classes
+  permanentes do TerraClass Amazônia, usando 1.000 pixels sistemáticos por classe e 184
+  compostos Sentinel-2 do Brazil Data Cube entre 2017 e 2024.
+type: dataset
+license: CC-BY-4.0
+authors:
+  - family-names: "Brito Neto"
+    given-names: "Rodrigo L."
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Giancola"
+    given-names: "Débora T."
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Anjos"
+    given-names: "Abner Ernâni dos"
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Sacramento"
+    given-names: "Bruna H."
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Monteiro"
+    given-names: "Erison C. S."
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Silva"
+    given-names: "Jadson Q. da"
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+  - family-names: "Teodoro"
+    given-names: "Mayara"
+    affiliation: "Instituto Nacional de Pesquisas Espaciais"
+keywords:
+  - sensoriamento remoto
+  - mistura espectral
+  - Pixel Purity Index
+  - decomposição STL
+  - séries temporais
+  - Sentinel-2
+  - Brazil Data Cube
+  - TerraClass
+  - Amazônia
+  - reprodutibilidade
+preferred-citation:
+  type: conference-paper
+  title: "Decomposição Espectro-temporal de Extremos do Pixel Purity Index Compatíveis com Vegetação Fotossinteticamente Ativa em Quatro Classes do TerraClass Amazônia"
+  year: 2026
+  collection-title: "Anais do Workshop dos Cursos de Computação Aplicada do INPE (WORCAP 2026)"
+  authors:
+    - family-names: "Brito Neto"
+      given-names: "Rodrigo L."
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Giancola"
+      given-names: "Débora T."
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Anjos"
+      given-names: "Abner Ernâni dos"
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Sacramento"
+      given-names: "Bruna H."
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Monteiro"
+      given-names: "Erison C. S."
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Silva"
+      given-names: "Jadson Q. da"
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"
+    - family-names: "Teodoro"
+      given-names: "Mayara"
+      affiliation: "Instituto Nacional de Pesquisas Espaciais"

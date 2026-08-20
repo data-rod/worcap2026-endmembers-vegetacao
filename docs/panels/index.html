@@ -1,0 +1,48 @@
+<!doctype html><html lang='pt-BR'><meta charset='utf-8'><title>Painel de avaliação espectral — exemplo</title><style>
+:root{--ink:#183126;--muted:#617168;--line:#d8e3dc;--paper:#fff;--wash:#f3f7f4;--accent:#176b45}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--wash);color:var(--ink);font-family:Arial,sans-serif}
+header{background:#143e2c;color:#fff;padding:12px 18px}header h1{margin:0;font-size:19px}header p{margin:4px 0 0;color:#d8e9df;font-size:13px}
+main{max-width:900px;margin:16px auto;padding:0 12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:16px 18px;margin-bottom:12px}
+.card h2{margin:0 0 8px;font-size:15px}
+p{line-height:1.55;margin:0 0 10px}
+a{color:var(--accent)}
+ul{margin:0 0 10px;padding-left:20px}li{margin-bottom:5px;line-height:1.5}
+.exemplo{display:inline-block;margin-top:4px;padding:9px 14px;background:var(--accent);color:#fff;border-radius:5px;text-decoration:none;font-weight:700}
+.nota{color:var(--muted);font-size:13px}
+</style>
+<header>
+  <h1>Painel de avaliação espectral</h1>
+  <p>Interface usada para inspecionar os candidatos do Pixel Purity Index</p>
+</header>
+<main>
+
+<section class="card">
+  <h2>O que é</h2>
+  <p>Cada classe usa 1.000 pontos sistemáticos fixos, consultados pelo WTSS em 184 compostos de 16 dias. O PPI é executado por <code>classe × data</code> sobre todos os pontos válidos da data, e o painel apresenta os até quatro candidatos retidos.</p>
+  <p>Os gráficos individuais mostram 128 curvas determinísticas de contexto e a média calculada sobre todos os pixels válidos. O avaliador seleciona nenhum, um, vários ou todos os candidatos com assinatura compatível com vegetação fotossinteticamente ativa, e a decisão é exportada em CSV.</p>
+</section>
+
+<section class="card">
+  <h2>Exemplo</h2>
+  <p>Este repositório publica <strong>um painel</strong>, para que o procedimento possa ser examinado sem carregar os cinco arquivos completos:</p>
+  <a class="exemplo" href="class_02.html">Classe 02 — Vegetação Natural Florestal Secundária</a>
+  <p class="nota" style="margin-top:12px">184 datas, 735 candidatos. Os painéis das classes 01, 09, 10 e 11 seguem exatamente a mesma estrutura.</p>
+</section>
+
+<section class="card">
+  <h2>Como o painel foi gerado</h2>
+  <p>Os painéis são construídos a partir dos candidatos e das séries publicados neste repositório, sem consulta remota:</p>
+  <ul>
+    <li>pelo pacote: <code>python -m worcap_endmembers build-panels</code></li>
+    <li>com o código à vista, célula a célula: <a href="../../notebooks/standalone/03_reconstruir_paineis.ipynb"><code>notebooks/standalone/03_reconstruir_paineis.ipynb</code></a></li>
+  </ul>
+  <p>Qualquer um dos dois regenera os cinco painéis em <code>outputs/</code>, diretório fora do controle de versão.</p>
+</section>
+
+<section class="card">
+  <h2>As avaliações resultantes</h2>
+  <p>Os CSVs exportados dos cinco painéis estão em <code>reviews/incoming/</code>, e as decisões consolidadas em <code>reviews/validated/</code>. O critério aplicado está descrito em <a href="../materials/metodologia.md"><code>docs/materials/metodologia.md</code></a>.</p>
+</section>
+
+</main></html>

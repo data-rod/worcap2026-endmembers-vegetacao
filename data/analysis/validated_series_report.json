@@ -1,0 +1,20 @@
+{
+  "review_decisions": 918,
+  "full_class_dates": 920,
+  "representative_spectra": 796,
+  "classes_stl_eligible": [
+    "02",
+    "09",
+    "10",
+    "11"
+  ],
+  "classes_stl_ineligible": [
+    "01"
+  ],
+  "bands_decomposed": 40,
+  "primary_reviewer": "rodrigo",
+  "disagreement_rule": "NOT_APPLICABLE_SINGLE_REVIEWER",
+  "representative_rule": "MAX_PPI_SCORE_THEN_SYSTEMATIC_ORDER",
+  "stl_period": 23,
+  "minimum_valid_fraction": 0.8
+}
